@@ -1,0 +1,85 @@
+/* HEADER HEADER HEADER */
+/* HEADER HEADER HEADER */
+/* HEADER HEADER HEADER */
+
+.header {
+  align-items:center;
+  background:#3d143c;
+  color:white;
+  display:grid;
+  grid-template-areas: ". a b .";
+  grid-template-columns: 8% 1fr 125px 8%;
+  font-family: 'Rajdhani', sans-serif;
+  font-size:1em;
+  height:55px;
+  width:100%;
+}
+
+.header > #header-special {
+  align-items:center;
+  display:flex;
+  grid-area:a;
+}
+
+.header > #header-special > p {
+  cursor:pointer;
+}
+
+.header > #signIn {
+  align-items:top;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  grid-area:b;
+  padding:5px;
+  position:relative;
+}
+
+.header > #signIn:hover {
+  background:white;
+  color:black;
+  cursor:pointer;
+}
+
+.header > #signIn > #yourAccount {
+  display:flex;
+}
+
+.header > #signIn > #email {
+  background:white;
+  border:1px solid #3d143c;
+  border-top:none;
+  color:black;
+  display:flex;
+  flex-direction:column;
+  justify-content:left;
+  left:0;
+  position:absolute;
+  top:100%;
+  width:100%;
+  z-index:2;
+}
+
+.img-arrow {
+  filter: invert(100%);
+  position:relative;
+  top:-2px;
+  width:20px;
+}
+
+#signIn:hover .img-arrow {
+  filter: invert(0%);
+}
+
+#icon {
+  cursor:pointer;
+  display:none;
+  grid-area:c;
+}
+
+#icon > .bar {
+  width: 70px;
+  height: 10px;
+  background-color: black;
+  margin: 12px 0;
+}

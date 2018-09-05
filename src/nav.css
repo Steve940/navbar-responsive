@@ -1,0 +1,169 @@
+/* NAV NAV NAV NAV NAV */
+/* NAV NAV NAV NAV NAV */
+/* NAV NAV NAV NAV NAV */
+
+h1, h2, h3 {
+    margin:0;
+    padding:0;
+  }
+  
+  img {
+    display:block;
+  }
+  
+  li {
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+  }
+  
+  ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  
+  nav {
+    display:flex;
+    font-family: 'Libre Franklin', sans-serif;
+    width:100%;
+  }
+  
+  nav > ul {
+    display:flex;
+    justify-content:space-around;
+    padding:0px;
+    position:relative;
+    width:100%;
+    z-index: 1;
+  }
+  
+  nav > ul > li {
+    border-bottom:2px solid #bfbfbf;
+    height:30px;
+  }
+  
+  nav > ul > li:hover {
+    border-bottom:2px solid transparent;
+  }
+  
+  nav > ul > li:hover > ul {
+    background:#e8e8e8;
+  }
+  
+  .selections1, .selections2 {
+    display:grid;
+    left:0;
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:100%;
+    width:100%;
+  }
+  
+  /* NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS */
+  /* NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS */
+  /* NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS NAV GRID SETTINGS */
+  
+  .selections1 {
+    grid-gap:10px;
+    grid-template-areas:". one two six seven eight .";
+    grid-template-columns: 5% 1fr 1fr 1.5fr 1.5fr 1.5fr 5% ;
+    grid-template-rows: 1fr;
+  }
+  
+  .selections2 {
+    grid-gap:10px;
+    grid-template-areas:". six seven eight one two .";
+    grid-template-columns: 5% 1.5fr 1.5fr 1.5fr 1fr 1fr 5%;
+    grid-template-rows: 1fr;
+  }
+  
+  nav > ul > li > ul .nav-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:none;
+  }
+  
+  nav > ul > li:hover > ul .nav-img {
+    display:inline;
+  }
+  
+  .nav-img1m {
+    background-image:url("https://images.pexels.com/photos/175687/pexels-photo-175687.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-position: 60% top;
+    grid-area:six;
+  }
+  
+  .nav-img2m {
+    background-image:url("https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-position: 15% center;
+    grid-area:seven;
+  }
+  
+  .nav-img3m {
+    background-image:url("https://images.pexels.com/photos/136418/pexels-photo-136418.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+    background-position: 15% center;
+    grid-area:eight;
+  }
+  
+  .nav-img1w {
+    background-image:url("https://images.pexels.com/photos/458649/pexels-photo-458649.jpeg?h=350&auto=compress&cs=tinysrgb");
+    background-position: 45% top;
+    grid-area:six;
+  }
+  
+  .nav-img2w {
+    background-image:url("https://images.pexels.com/photos/368740/pexels-photo-368740.jpeg?h=350&auto=compress&cs=tinysrgb");
+    background-position: 50% center;
+    grid-area:seven;
+  }
+  
+  .nav-img3w {
+    background-image:url("https://images.pexels.com/photos/821413/pexels-photo-821413.jpeg?h=350&auto=compress&cs=tinysrgb");
+    background-position: 70% center;
+    grid-area:eight;
+  }
+  
+  nav > ul > li > ul > ul {
+    align-items:center;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    padding:10px;
+  }
+  
+  nav > ul > li:hover > ul > ul {
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:10px;
+  }
+  
+  nav > ul > li > ul > ul > li {
+    border-bottom:2px solid transparent;
+    margin-top:5px;
+  }
+  
+  nav > ul > li > ul > ul > li:hover{
+    border-bottom:2px solid #bfbfbf;
+    cursor:pointer;
+  }
+  
+  nav > ul > li > ul > ul > h1 {
+    width:100%;
+    border-bottom:2px solid gray;
+    text-align:center;
+  }
+  
+  #mens-apparel{
+    align-self:start;
+    grid-area:one;
+  }
+  #mens-accessories{
+    align-self:start;
+    grid-area:two;
+  }
